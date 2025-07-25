@@ -8,6 +8,7 @@ Modern networking might be one of the greatest inventions of our time, but like 
 
 The  report focuses on some of the major network threats like **Denial-of-Service (DoS)**, **Man-in-the-Middle (MITM)** attacks, and **Spoofing**. These are discussed in detail, along with how they work, their impact, real-world examples, and the measures that can be taken to defend against them.
 
+---
 
 ##  Denial-of-Service (DoS) Attacks
 
@@ -33,6 +34,7 @@ Imagine you're in line at your favorite bakery, excited to buy their famous bana
 
 That’s what a **DoS attack** looks like in the digital world; fake traffic clogs the service, preventing real users from getting through.
 
+---
 
 ###  DoS working
 
@@ -91,6 +93,9 @@ These target specific applications or websites and try to exhaust their processi
 
 **Goal:** Overload the app or backend server  
 **Measurement:** Requests per second (rps)
+
+---
+
 ### Real-World Example: GitHub DDoS Attack (2018)
 
 On February 28, 2018, GitHub — the world’s largest code hosting platform, 
@@ -98,24 +103,26 @@ was hit by one of the **biggest Distributed Denial-of-Service (DDoS) attacks eve
 
 This attack peaked at a massive **1.35 terabits per second (Tbps)**, overwhelming GitHub’s servers with fake traffic and making the site temporarily inaccessible for millions of users around the world.
 
-####  How the Attack Worked:
+#### -> How the Attack Worked:
 - The attackers used a technique called a **"memcached amplification attack."**
 - Memcached servers are meant to improve web performance by storing data in memory.
 - But many of these servers were exposed to the internet **without authentication**.
 - Attackers sent small requests to these servers while **spoofing GitHub’s IP address**.
 - These servers responded with much **larger replies (amplified by up to 50,000x)** — all directed toward GitHub.
 
-####  Impact:
+#### -> Impact:
 - GitHub’s services became **temporarily unavailable**.
 - It caused **serious traffic congestion**, affecting developers and businesses relying on GitHub.
 - GitHub had to quickly route traffic through **a DDoS mitigation service** (Akamai/Prolexic) to absorb and block the attack.
 
-#### Outcome:
+#### -> Outcome:
 - GitHub recovered within minutes thanks to rapid detection and automatic rerouting.
 - The incident highlighted the growing threat of **amplification-based DDoS attacks**.
 - It pushed companies to **secure open servers** and improve **response infrastructure**.
 
 >  At the time, it was considered the **largest DDoS attack in history**, later surpassed by other high-volume attacks in 2020+.[3]
+
+---
 
 ##  Impact of DoS Attacks
 

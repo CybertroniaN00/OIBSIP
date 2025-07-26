@@ -4,9 +4,9 @@
 
 # Table of Contents
 
-##1 Introduction  
+## 1 Introduction  
 
-##Denial-of-Service (DoS) Attacks  
+## Denial-of-Service (DoS) Attacks  
 ###  2.1 What is a DoS Attack  
 ###  2.2 How Does a DoS Attack Work  
 ###  2.3 Types of DoS Attacks  
@@ -46,7 +46,7 @@
 
 ---
 
-##1. Introduction
+# 1. Introduction
 
 
 As time passes, humanity's reliance on the internet is increasing day by day — and honestly, that’s not a bad thing. The internet helps make our work faster, more efficient, and more connected. But with the rapid growth in users, there’s also a growing need to keep everyone safe and secure while maintaining their individual privacy and identity.
@@ -58,7 +58,7 @@ In this report, I’ve focused on some of the major network threats like Denial-
 
 ---
 
-## 2.1 Denial-of-Service (DoS) Attacks[1][2]
+# 2.1 Denial-of-Service (DoS) Attacks[1][2]
 
 One of the most common and widely known types of network threats is the Denial-of-Service (DoS) attack. Interestingly, it doesn't exploit a vulnerability in the usual sense, but instead takes advantage of a normal function of networks — the ability to let users access services from anywhere, at any time. Attackers misuse this feature by generating a massive amount of traffic toward a specific website, application, or online service. While traffic itself isn’t harmful, too much of it — especially when it’s fake — becomes a serious issue.
 
@@ -84,7 +84,7 @@ That’s what a **DoS attack** looks like in the digital world; fake traffic clo
 
 ---
 
-### 2.2 DoS working
+## 2.2 DoS working
 
 A Denial-of-Service (DoS) attack works by overwhelming a targeted system, server, or network with excessive traffic or resource requests, rendering it unable to respond to legitimate user requests.
 
@@ -145,7 +145,7 @@ These target specific applications or websites and try to exhaust their processi
 
 ---
 
-### 2.4 Real-World Example: GitHub DDoS Attack (2018)[4]
+## 2.4 Real-World Example: GitHub DDoS Attack (2018)[4]
 
 On February 28, 2018, GitHub — the world’s largest code hosting platform, 
 was hit by one of the **biggest Distributed Denial-of-Service (DDoS) attacks ever recorded** at the time.

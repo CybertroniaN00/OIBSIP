@@ -17,7 +17,7 @@
 ###  2.5 Impact of DoS Attacks  
 ###  2.6 Mitigation and Countermeasures
 
-##Man-in-the-Middle (MITM) Attacks  
+## Man-in-the-Middle (MITM) Attacks  
 ###  3.1 Introduction to MITM   
 ###  3.2 How MITM Attacks Work  
 ###  3.3 Common Types of MITM Attacks  
@@ -28,7 +28,7 @@
 ###  3.5 Impact of MITM Attacks  
 ###  3.6 Mitigation and Countermeasures 
 
-###Spoofing Attacks  
+### Spoofing Attacks  
 ###  4.1 Introduction to Spoofing  
 ###  4.2 How Spoofing Works  
 ###  4.3 Common Types of Spoofing  
@@ -40,9 +40,9 @@
 ###  4.5 Impact of Spoofing  
 ###  4.6 Mitigation and Countermeasures
 
-##Conclusion
+## Conclusion
 
-##References
+## References
 
 ---
 

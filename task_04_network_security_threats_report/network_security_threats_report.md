@@ -1,16 +1,64 @@
 # Network Security Threats Report
 
-## Introduction
+---
+
+# Table of Contents
+
+##1 Introduction  
+
+##Denial-of-Service (DoS) Attacks  
+###  2.1 What is a DoS Attack  
+###  2.2 How Does a DoS Attack Work  
+###  2.3 Types of DoS Attacks  
+###    • Volume-Based Attacks  
+###    • Protocol Attacks  
+###    • Application Layer Attacks  
+###  2.4 Real World Example: GitHub DDoS Attack (2018)  
+###  2.5 Impact of DoS Attacks  
+###  2.6 Mitigation and Countermeasures
+
+##Man-in-the-Middle (MITM) Attacks  
+###  3.1 Introduction to MITM   
+###  3.2 How MITM Attacks Work  
+###  3.3 Common Types of MITM Attacks  
+###    • Packet Sniffing  
+###    • Session Hijacking  
+###    • Evil Twin Attacks  
+###  3.4 Real-World Examples   
+###  3.5 Impact of MITM Attacks  
+###  3.6 Mitigation and Countermeasures 
+
+###Spoofing Attacks  
+###  4.1 Introduction to Spoofing  
+###  4.2 How Spoofing Works  
+###  4.3 Common Types of Spoofing  
+###    • IP Spoofing  
+###    • Email Spoofing  
+###    • DNS Spoofing  
+###    • Wi-Fi Spoofing  
+###  4.4 Real-World Examples  
+###  4.5 Impact of Spoofing  
+###  4.6 Mitigation and Countermeasures
+
+##Conclusion
+
+##References
+
+---
+
+##1. Introduction
+
 
 As time passes, humanity's reliance on the internet is increasing day by day — and honestly, that’s not a bad thing. The internet helps make our work faster, more efficient, and more connected. But with the rapid growth in users, there’s also a growing need to keep everyone safe and secure while maintaining their individual privacy and identity.
 
 Modern networking might be one of the greatest inventions of our time, but like everything, it has its own weaknesses. And unfortunately, those weaknesses lead to threats — threats that can make systems vulnerable to breaches and compromise a user's integrity, confidentiality, or accountability.
 
-The  report focuses on some of the major network threats like **Denial-of-Service (DoS)**, **Man-in-the-Middle (MITM)** attacks, and **Spoofing**. These are discussed in detail, along with how they work, their impact, real-world examples, and the measures that can be taken to defend against them.
+
+In this report, I’ve focused on some of the major network threats like Denial-of-Service (DoS), Man-in-the-Middle (MITM) attacks, and Spoofing. These are discussed in detail, along with how they work, their impact, real-world examples, and the measures that can be taken to defend against them.
 
 ---
 
-##  Denial-of-Service (DoS) Attacks
+## 2.1 Denial-of-Service (DoS) Attacks[1][2]
 
 One of the most common and widely known types of network threats is the Denial-of-Service (DoS) attack. Interestingly, it doesn't exploit a vulnerability in the usual sense, but instead takes advantage of a normal function of networks — the ability to let users access services from anywhere, at any time. Attackers misuse this feature by generating a massive amount of traffic toward a specific website, application, or online service. While traffic itself isn’t harmful, too much of it — especially when it’s fake — becomes a serious issue.
 
@@ -36,7 +84,7 @@ That’s what a **DoS attack** looks like in the digital world; fake traffic clo
 
 ---
 
-###  DoS working
+### 2.2 DoS working
 
 A Denial-of-Service (DoS) attack works by overwhelming a targeted system, server, or network with excessive traffic or resource requests, rendering it unable to respond to legitimate user requests.
 
@@ -54,7 +102,7 @@ DoS attacks break things not by hacking into them, but by overloading them until
 
 ---
 
-## Types of Denial-of-Service (DoS) Attacks
+## 2.3 Types of Denial-of-Service (DoS) Attacks[1][2][5]
 
 DoS attacks come in different forms based on what part of the system they try to break. Below are the most common types:
 
@@ -97,7 +145,7 @@ These target specific applications or websites and try to exhaust their processi
 
 ---
 
-### Real-World Example: GitHub DDoS Attack (2018)
+### 2.4 Real-World Example: GitHub DDoS Attack (2018)[4]
 
 On February 28, 2018, GitHub — the world’s largest code hosting platform, 
 was hit by one of the **biggest Distributed Denial-of-Service (DDoS) attacks ever recorded** at the time.
@@ -125,7 +173,7 @@ This attack peaked at a massive **1.35 terabits per second (Tbps)**, overwhelmin
 
 ---
 
-##  Impact of DoS Attacks
+## 2.5. Impact of DoS Attacks
 
 DoS attacks may seem simple, but their consequences can be severe — especially when services are highly time-sensitive or business-critical.
 
@@ -138,7 +186,7 @@ Downtime can lead to loss of revenue, emergency recovery costs, and damage to br
 ### 3. Security Distraction
 While the system is overloaded, attackers may use the chaos to hide other threats or breaches, making DoS attacks a diversion tactic in some cases.
 
-##  Mitigation and Countermeasures for DoS Attacks
+## 2.6 Mitigation and Countermeasures for DoS Attacks[1][6]
 
 Stopping a DoS attack completely isn’t always easy. Sometimes, finding a full solution isn’t even possible — especially when the problem lies in the very service you're designed to provide. But there are smart ways to detect the attack early and reduce the damage it causes.
 
@@ -169,15 +217,16 @@ Outdated systems are easier to crash or overwhelm. Regular updates, optimization
 
 It’s like upgrading your door’s lock so it doesn’t jam easily or break when someone keeps shaking it.
 
+---
 
 >  The key is to stay prepared — DoS attacks are about overwhelming systems, so your best defense is making sure your system is strong, efficient, and alert enough to push back.
 
 ---
 
 
-## 2. Man-in-the-Middle (MITM)
+## 3.1 Man-in-the-Middle (MITM)
 
-##  Introduction to Man-in-the-Middle (MITM) Attacks
+##  Introduction to Man-in-the-Middle (MITM) Attacks[7][1]
 
 Communication and data sharing are one of the main — if not the sole — purposes of digital networks. But the truth is, there’s **no guaranteed way to prove that your connection is 100% secure**. 
 One of the biggest threats to network communication is the **compromise of privacy and secrecy** — where unauthorized users get access to what was meant to be a private exchange.
@@ -205,7 +254,7 @@ Forouzan emphasizes that the attacker is **silently sitting in the middle**, rea
 
 These definitions make it clear that MITM attacks are dangerous not just because of what attackers **can see**, but because of what they can **change** — and the worst part is, you probably won’t even realize it’s happening.
 
-##  How Does a Man-in-the-Middle (MITM) Attack Work?
+## 3.2 How Does a Man-in-the-Middle (MITM) Attack Work?[9][8]
 
 At its core, a Man-in-the-Middle (MITM) attack is all about **intercepting communication between two parties** — usually a user and a server — without either party knowing that someone else is watching or interfering.
 
@@ -245,7 +294,7 @@ MITM attacks are especially dangerous because:
 
 ---
 
-##  Common Types of Man-in-the-Middle (MITM) Attacks
+## 3.3 Common Types of Man-in-the-Middle (MITM) Attacks[1][14]
 
 MITM attacks come in different forms, but all aim to silently intercept, monitor, or manipulate communication. Here are three major types that show up frequently in real-world scenarios:
 
@@ -277,13 +326,13 @@ These methods may differ in technique, but the core idea is the same: **the atta
 
 ---
 
-## Real-World Examples of MITM Attacks
+## 3.4 Real-World Examples of MITM Attacks
 
 While MITM attacks may sound like something out of a spy movie, they've happened in real life — and some caused serious damage. Here are a few well-known examples that show how dangerous and sneaky these attacks can be:
 
 
 
-### 1. Superfish Scandal – Lenovo (2015)
+### 1. Superfish Scandal – Lenovo (2015)[13]
 
 Lenovo shipped laptops with a program called **Superfish Adware**, which installed a **self-signed root certificate** that allowed it to intercept HTTPS traffic. This basically **broke secure web connections** and made it possible for attackers to perform MITM attacks without the user realizing.
 
@@ -301,7 +350,7 @@ Firesheep was a Firefox plugin that let people **easily hijack sessions** over u
 
 ---
 
-##  Impact of MITM Attacks
+## 3.5 Impact of MITM Attacks[11]
 
 MITM attacks are dangerous because they’re usually invisible — and by the time someone realizes what’s happened, it’s often too late. Here’s what they can lead to:
 
@@ -317,18 +366,18 @@ By hijacking sessions or altering communication, attackers can **pretend to be y
 
 
 
-###  3. Damage to Trust and Reputation  [5][6][7]
+###  3. Damage to Trust and Reputation  
 If a company’s communication is compromised, it loses customer trust. Imagine users finding out their info was leaked — the brand may lose credibility overnight.
 
 ---
 
-##  Mitigation and Countermeasures
+## 3.6 Mitigation and Countermeasures[1][2][12]
 
 While MITM attacks can’t always be prevented 100%, there are **multiple ways to make them harder to pull off** — both for users and organizations.
 
 
 
-### 1. Use End-to-End Encryption  [7]
+### 1. Use End-to-End Encryption  
 Always use HTTPS-secured websites and apps that support strong encryption (like TLS). This ensures even if data is intercepted, it **can’t be read**.
 
 
@@ -351,7 +400,7 @@ In corporate environments, IDS tools can monitor network traffic patterns and **
 ---
 
 
-## 3 Spoofing
+## 4.1 Spoofing
 
 Imagine someone pretending to be your friend just to get access to your stuff — your notes, your locker, or even your group project. You trust them because they look familiar or sound convincing, but it turns out they’re someone else entirely. That’s basically what **spoofing** is in the world of networking and cybersecurity.
 
@@ -363,7 +412,7 @@ Spoofing isn’t always about finding a vulnerability in the code — it’s mor
 ---
 
 
-##  Spoofing Working
+## 4.2 Spoofing Working [16][17]
 
 The basic idea behind spoofing is **disguise**. The attacker manipulates identifiers like:
 
@@ -376,7 +425,7 @@ When the victim communicates with the spoofed entity, they unknowingly send sens
 
 ---
 
-##  Common Types of Spoofing
+##  4.3 Common Types of Spoofing[1][2][20]
 
 ###  IP Spoofing  
 In IP spoofing, the attacker **alters their IP address** to look like a trusted system. This is commonly used in DDoS attacks or to bypass network-level authentication.
@@ -396,7 +445,7 @@ An attacker creates a **fake Wi-Fi network** with the same name (SSID) as a legi
 
 ---
 
-##  Real-World Examples
+## 4.4 Real-World Examples
 
 ###  1. Business Email Compromise (BEC)  
 In 2020, a Japanese media company lost over **$29 million** when an attacker spoofed a company executive’s email. The attacker convinced an employee to wire money to a fraudulent overseas account.
@@ -406,7 +455,7 @@ Hackers used DNS spoofing to redirect users in Venezuela to **phishing versions 
 
 ---
 
-## 🚨 Impact of Spoofing Attacks
+## 4.5 Impact of Spoofing Attacks
 
 - **Loss of Trust:** Users stop trusting legitimate systems due to fear of being tricked.
 - **Data Breach:** Sensitive data like login credentials, emails, or financial details can be stolen.
@@ -415,7 +464,7 @@ Hackers used DNS spoofing to redirect users in Venezuela to **phishing versions 
 
 ---
 
-##  Mitigation and Countermeasures
+## 4.6 Mitigation and Countermeasures [15][16][17]
 
 ###  1. Email Security Protocols (SPF, DKIM, DMARC)  
 These validate emails and make it harder for attackers to forge the sender’s identity.
@@ -435,7 +484,7 @@ Educate users to **recognize phishing emails**, double-check URLs, and avoid con
 
 ---
 
-## Conclusion
+## 5 Conclusion
 
 As the digital world continues to expand, the number of users, services, and connected devices is growing faster than ever — and with that growth comes increasing risk. Network security threats like **Denial-of-Service (DoS)**, **Man-in-the-Middle (MITM)**, and **Spoofing** are no longer just theoretical problems we read about in textbooks. They are real, evolving, and capable of causing serious disruptions in our everyday lives.
 
@@ -446,3 +495,66 @@ The aim here wasn’t just to describe attacks, but to also build awareness. Und
 What I’ve learned while researching and writing this report is that cybersecurity isn’t just a field for professionals with advanced tools — it’s something that concerns every internet user. With the right awareness and preventive actions, we can minimize risks and contribute to a safer digital space for everyone.
 
 In a world where everything is connected, **being aware is being secure**.
+
+---
+
+# References
+
+[1] William Stallings, "Network Security Essentials: Applications and Standards", 6th Edition, Pearson Education, 2017.
+
+[2] Behrouz A. Forouzan, "Data Communications and Networking", 5th Edition, McGraw-Hill Education.
+
+[3] Cloudflare – What is a DDoS attack?  
+https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/
+
+[4] Akamai Blog – GitHub Hit by Record DDoS  
+https://blogs.akamai.com/2018/02/githubs-ddos-attack-explained.html
+
+[5] Radware – DDoS Attack Types  
+https://www.radware.com/security/ddos-knowledge-center/ddos-attack-types/
+
+[6] Imperva – DDoS Mitigation  
+https://www.imperva.com/learn/ddos/ddos-mitigation/
+
+[7] CSO Online – The biggest DDoS attacks  
+https://www.csoonline.com/article/2129745/what-are-the-biggest-ddos-attacks-in-history.html
+
+[8] NIST SP 800-61 Rev. 2 – Incident Handling Guide  
+https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final
+
+[9] Kaspersky – Man-in-the-Middle (MITM) Attacks  
+https://www.kaspersky.com/resource-center/definitions/man-in-the-middle-attack
+
+[10] TechTarget – MITM Attack Explanation  
+https://www.techtarget.com/searchsecurity/definition/man-in-the-middle-attack
+
+[11] OWASP – MITM Attack Overview  
+https://owasp.org/www-community/attacks/Man-in-the-middle_attack
+
+[12] IBM – MITM Prevention  
+https://www.ibm.com/docs/en/digital-certificates?topic=security-preventing-man-in-middle-attacks
+
+[13] ZDNet – Superfish MITM Scandal (Lenovo Real Example)  
+https://www.zdnet.com/article/lenovo-superfish-vulnerability-what-you-need-to-know/
+
+[14] Cloudflare – What is a MITM attack?  
+https://www.cloudflare.com/learning/ddos/glossary/man-in-the-middle-attack/
+
+[15] Cisco – IP Spoofing Explained  
+https://www.cisco.com/c/en/us/about/security-center/ip-spoofing.html
+
+[16] Cloudflare – Email Spoofing & Phishing  
+https://www.cloudflare.com/learning/email-security/what-is-email-spoofing/
+
+[17] Imperva – DNS Spoofing Overview  
+https://www.imperva.com/learn/application-security/dns-spoofing/
+
+[18] OWASP – Email Spoofing  
+https://owasp.org/www-community/attacks/Email_spoofing
+
+[19] Ars Technica – MyEtherWallet DNS Attack  
+https://arstechnica.com/information-technology/2018/04/dns-attack-on-myetherwallet-diverts-users-to-phishing-site/
+
+[20] Norton – Types of Spoofing Attacks  
+https://us.norton.com/blog/emerging-threats/spoofing-attacks
+

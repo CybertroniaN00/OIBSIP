@@ -205,7 +205,7 @@ Forouzan emphasizes that the attacker is **silently sitting in the middle**, rea
 
 These definitions make it clear that MITM attacks are dangerous not just because of what attackers **can see**, but because of what they can **change** — and the worst part is, you probably won’t even realize it’s happening.
 
-## 🔍 How Does a Man-in-the-Middle (MITM) Attack Work?
+##  How Does a Man-in-the-Middle (MITM) Attack Work?
 
 At its core, a Man-in-the-Middle (MITM) attack is all about **intercepting communication between two parties** — usually a user and a server — without either party knowing that someone else is watching or interfering.
 

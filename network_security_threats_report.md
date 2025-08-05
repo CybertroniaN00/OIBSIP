@@ -1,5 +1,10 @@
 # Network Security Threats Report
 
+Submitted By: Ayush Mishra  
+Submitted Under: Oasis Infobyte Security Analyst Internship  
+Task: Task 1 – Research Report Network Security Threats  
+
+
 ---
 
 # Table of Contents
